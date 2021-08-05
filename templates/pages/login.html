@@ -1,0 +1,31 @@
+<head>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="left">
+            <h1 id="welcome">Login</h1>
+
+        </div>
+        <div id="right">
+            <div class="reg-login">Not have Account? <a href="/">Register</a>
+            </div>
+            <form id="login-form" action="/api/login" method="post">
+                <input type="email" id="email" name="email" value="" class="client-info">
+                <label for="email">Email</label>
+                <input type="text" id="password" name="password" value="" class="client-info">
+                <label for="password">Password</label>
+                <input type="submit" id="submit" class="client-info" value="Submit" onclick="login()">
+            </form>
+        </div>
+    </div>
+</body>
+<!-- <script>
+var data = $('#login-form').serialize();
+$.post('/api/login', data);
+</script> -->
